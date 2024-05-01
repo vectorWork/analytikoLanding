@@ -44,6 +44,6 @@ app.post('/form-post', async (req, res) => {
 
 app.use(express.static(__dirname));
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Contacto_Analytiko_web.html'));
+  res.sendFile(path.join(__dirname, '/Contacto/Contacto_Analytiko_web.html'));
 });
 app.listen(port, () => console.log(`Servidor corriendo en puerto ${port}`));
