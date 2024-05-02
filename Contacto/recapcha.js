@@ -97,6 +97,16 @@ window.addEventListener('load', function () {
                   responseText.success;
                 document.querySelector('#alert').classList.add('success');
                 window.location.replace('/thanks'); // Redirect to the thanks page
+
+                fetch('https://formsubmit.co/vritco98@gmail.com', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json', // Indicate that you're sending JSON
+                  },
+                  body: JSON.stringify(formData), // Convert to JSON
+                }).then((res) => {
+                  console.log(res);
+                });
               });
           });
       });
