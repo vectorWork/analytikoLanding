@@ -91,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var inputChanged = document.getElementById(e.target.id);
     var inputRequired = document.getElementById(e.target.id + 'Required');
     var inputEmailFormat = document.getElementById('inputEmailFormat');
+    console.log(inputChanged.value);
     if (
       inputChanged.value === '' ||
       inputChanged.value == null ||
