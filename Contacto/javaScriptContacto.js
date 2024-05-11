@@ -91,7 +91,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var inputChanged = document.getElementById(e.target.id);
     var inputRequired = document.getElementById(e.target.id + 'Required');
     var inputEmailFormat = document.getElementById('inputEmailFormat');
-    console.log(inputChanged.value);
     if (
       inputChanged.value === '' ||
       inputChanged.value == null ||
@@ -113,11 +112,12 @@ document.addEventListener('DOMContentLoaded', function () {
   ///////////////////////////////////
   //Capcha
   ///////////////////////////////////
-
+  console.log(form);
   //const form = document.querySelector('.contact'); // Get the form
   form.addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent the default action of the form
     // let fields = document.querySelectorAll('.contact .form-control'); // Get all the fields
+    console.log('sumbit');
 
     // for (var i = 0; i < fields.length; i++) {
     //   fields[i].classList.remove('no-error'); // Remove the no-error class from all fields
