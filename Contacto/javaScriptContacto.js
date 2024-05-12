@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function () {
                   }
                 }
                 formData['_next'] = './Contacto/Contacto_Analytiko_web.html';
-                console.log({ form_data: formData });
+                console.log(formData);
                 // https://github.com/axios/axios
                 axios.defaults.headers.post['Content-Type'] =
                   'application/json';
