@@ -167,14 +167,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 //   document.querySelector('.formfields').style.display = 'block';
                 //   return;
                 // }
-                console.log('pase el response');
                 // document.querySelector('#alert').innerText =
                 //   responseText.success;
                 // document.querySelector('#alert').classList.add('success');
                 // window.location.replace(
                 //   './Contacto/Contacto_Analytiko_web.html'
                 // ); // Redirect to the thanks page
-                console.log('antes del form data');
                 // Crear un objeto para almacenar los datos del formulario
                 let formData = {};
 
@@ -194,10 +192,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 axios.defaults.headers.post['Content-Type'] =
                   'application/json';
                 axios
-                  .post('https://formsubmit.co/ajax/victorbri2112@gmail.com', {
-                    name: 'FormSubmit',
-                    message: "I'm from Devro LABS",
-                  })
+                  .post(
+                    'https://formsubmit.co/ajax/victorbri2112@gmail.com',
+                    formData
+                  )
                   .then((response) => console.log(response))
                   .catch((error) => console.log(error));
                 //analytikogroup
