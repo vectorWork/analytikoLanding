@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function () {
                   }
                 }
                 //analytikogroup
-                fetch('https://formsubmit.co/victorbri2112@gmail.com"', {
+                fetch('https://formsubmit.co/victorbri2112@gmail.com', {
                   method: 'POST',
                   headers: {
                     'Content-Type': 'application/json', // Indicate that you're sending JSON
