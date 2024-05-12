@@ -168,13 +168,14 @@ document.addEventListener('DOMContentLoaded', function () {
                   document.querySelector('.formfields').style.display = 'block';
                   return;
                 }
+                console.log('pase el response');
                 document.querySelector('#alert').innerText =
                   responseText.success;
                 document.querySelector('#alert').classList.add('success');
                 window.location.replace(
                   './Contacto/Contacto_Analytiko_web.html'
                 ); // Redirect to the thanks page
-
+                console.log('antes del form data');
                 // Crear un objeto para almacenar los datos del formulario
                 let formData = {};
 
