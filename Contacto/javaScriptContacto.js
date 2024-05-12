@@ -189,31 +189,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 console.log({ form_data: formData });
                 //analytikogroup
-                fetch('https://formsubmit.co/victorbri2112@gmail.com', {
+                fetch('https://formsubmit.co/ajax/victorbri2112@gmail.com', {
                   method: 'POST',
                   headers: {
                     'Content-Type': 'application/json', // Indicate that you're sending JSON
                   },
-                  body: JSON.stringify({ form_data: formData }),
+                  body: JSON.stringify(formData),
                 })
                   .then((response) => response.json())
                   .then((data) => console.log(data))
                   .catch((error) => console.error('Error:', error));
               });
-            //   fetch("https://formsubmit.co/ajax/your@email.com", {
-            //     method: "POST",
-            //     headers: {
-            //         "Content-Type": "application/json"
-            //     },
-            //     body: JSON.stringify({
-            //         name: "FormSubmit",
-            //         message: "I'm from Devro LABS"
-            //     })
-            // })
-            // .then(response => response.json())
-            // .then(data => console.log(data))
-            // .catch((error) => console.error('Error:', error));
-            // });
           });
       });
     }
