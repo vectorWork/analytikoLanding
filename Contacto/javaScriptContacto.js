@@ -193,15 +193,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log({ form_data: formData });
                 alert(formData);
                 // https://github.com/axios/axios
-                axios.defaults.headers.post['Content-Type'] =
-                  'application/json';
-                axios
-                  .post('https://formsubmit.co/ajax/victorbri2112@gmail.com', {
-                    name: 'FormSubmit',
-                    message: "I'm from Devro LABS",
-                  })
-                  .then((response) => console.log(response))
-                  .catch((error) => console.log(error));
+                // axios.defaults.headers.post['Content-Type'] =
+                //   'application/json';
+                // axios
+                //   .post('https://formsubmit.co/ajax/victorbri2112@gmail.com', {
+                //     name: 'FormSubmit',
+                //     message: "I'm from Devro LABS",
+                //   })
+                //   .then((response) => console.log(response))
+                //   .catch((error) => console.log(error));
                 //analytikogroup
                 // fetch('https://formsubmit.co/ajax/victorbri2112@gmail.com', {
                 //   method: 'POST',
