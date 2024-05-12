@@ -1,4 +1,3 @@
-const axios = require('axios');
 //Opciones menu
 document.addEventListener('DOMContentLoaded', function () {
   var button = document.getElementById('buttonProducts');
