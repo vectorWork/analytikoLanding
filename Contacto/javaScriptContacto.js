@@ -83,6 +83,8 @@ document.addEventListener('DOMContentLoaded', function () {
       button.setAttribute('style', 'pointer-events: none;');
       valid = false;
     } else {
+      valid = true;
+
       allRequired.classList.add('hide');
       button.setAttribute('style', 'pointer-events: all;');
     }
@@ -112,12 +114,10 @@ document.addEventListener('DOMContentLoaded', function () {
   ///////////////////////////////////
   //Capcha
   ///////////////////////////////////
-  console.log(form);
   //const form = document.querySelector('.contact'); // Get the form
   form.addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent the default action of the form
     // let fields = document.querySelectorAll('.contact .form-control'); // Get all the fields
-    console.log('sumbit');
 
     // for (var i = 0; i < fields.length; i++) {
     //   fields[i].classList.remove('no-error'); // Remove the no-error class from all fields
