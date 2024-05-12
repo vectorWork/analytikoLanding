@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     'Content-Type': 'application/json', // Indicate that you're sending JSON
                   },
                   body: JSON.stringify(formData), // Convert to JSON
-                });
+                }).then((response) => console.log(response));
               });
           });
       });
