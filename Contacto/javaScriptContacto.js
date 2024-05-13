@@ -186,8 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     formData[field.name] = field.value;
                   }
                 }
-                formData['_next'] = './Contacto/Contacto_Analytiko_web.html';
-                console.log(formData);
+                //formData['_next'] = './Contacto/Contacto_Analytiko_web.html';
                 // https://github.com/axios/axios
                 axios.defaults.headers.post['Content-Type'] =
                   'application/json';
@@ -196,8 +195,17 @@ document.addEventListener('DOMContentLoaded', function () {
                     'https://formsubmit.co/ajax/victorbri2112@gmail.com',
                     formData
                   )
-                  .then((response) => console.log(response))
-                  .catch((error) => console.log(error));
+                  .then((response) => {
+                    document.querySelector('#alert').innerText =
+                      '¡Información enviada con exito!';
+                    console.log(response);
+                  })
+
+                  .catch((error) => {
+                    document.querySelector('#alert').innerText =
+                      'Ha ocurrido un error, intente mas tarde';
+                    console.log(error);
+                  });
                 //analytikogroup
                 // fetch('https://formsubmit.co/ajax/victorbri2112@gmail.com', {
                 //   method: 'POST',

@@ -28,6 +28,12 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+.alertText{
+  font-size: 30px;
+  margin: 0px 15px 0px 148px;
+  width: 303px;
+  color: white;
+}
 
 /* label {
   position: absolute;
@@ -853,6 +859,12 @@ a {
     margin-left: 40px;
     margin-top: 25px;
   }
+  .alertText{
+    font-size: 30px;
+    margin: 0px 15px 0px 27px;
+    width: 303px;
+  }
+  
 }
 
 
